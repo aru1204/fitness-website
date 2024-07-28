@@ -21,12 +21,14 @@ body{
 }
 .section-title{
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: bolder;
 }
 .section-description{
     font-size: .875rem;
     font-weight: 400;
     color: var(--light-white);
+    line-height: 1.5rem;
+    word-spacing: 3px;
 }
 
 /* shared style */
@@ -120,6 +122,9 @@ body{
     border-radius: 3.2rem;
     font-weight: 600;
 }
+.bar-menu{
+    display: none;
+}
 
 /* banner title style */
 
@@ -183,7 +188,7 @@ body{
     position: relative;
     top: -35%;
     left: -35%;
-    width: 50%;
+    width: 45%;
     text-align: left;
 }
 
@@ -218,8 +223,10 @@ body{
     align-items: center;
     margin-bottom: 5rem;
 }
+.habit-section-title{
+    margin-bottom: 1rem;
+}
 .habit-card-description{
-    padding-top: 1rem;
     padding-bottom: 3.5rem;
     max-width: 671px;
 }
@@ -257,6 +264,9 @@ body{
 .run-section-description{
     padding-top: 1rem;
     padding-bottom: 2rem;
+}
+.run-section-description-br{
+    display: none;
 }
 .run-img img{
     width: 100%;

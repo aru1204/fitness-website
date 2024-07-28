@@ -19,6 +19,7 @@
     }
     .bar-menu{
         color: white;
+        display: block;
     }
     .banner-section{
         margin-top: 3rem;
@@ -52,7 +53,7 @@
         gap: 1rem;
     }
     .common-btn, .download-btn{
-        padding: .8rem .8rem;
+        padding: 1rem .8rem;
         font-weight: bold;
     }
     .common-btn a{
@@ -85,7 +86,7 @@
         margin-left: 20px;
         margin-right: 20px;
         padding: 1.8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
     }
     .run-section div{
         width: 100%;
