@@ -17,6 +17,9 @@
     .nav-menu{
         display: none;
     }
+    .bar-menu{
+        color: white;
+    }
     .banner-section{
         margin-top: 3rem;
     }
@@ -36,11 +39,20 @@
     .mobile-join-btn{
         display: none;
     }
+    .common-btn-link, .download-btn{
+        font-size: 1.125rem;
+    }
+    .banner-btn{
+        justify-content: space-between;
+    }
+    .banner-btn-mr{
+        width: calc( 100%/2 );
+    }
     .banner-btn{
         gap: 1rem;
     }
     .common-btn, .download-btn{
-        padding: .8rem 1.8rem;
+        padding: .8rem .8rem;
         font-weight: bold;
     }
     .common-btn a{
