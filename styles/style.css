@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* global style */
+
+@font-face{
+    font-family: miamafont;
+    src: url(Miama.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+.section{
+    max-width: 1060px;
+    margin: auto;
+}
+body{
+    background-color: black;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.section-description{
+    font-size: .875rem;
+    font-weight: 400;
+    color: var(--light-white);
+}
+
+/* shared style */
+
+:root{
+    --red-color: #E6533C;
+    --light-white: rgba(255, 255, 255, 0.5);
+}
+.flex{
+    display: flex;
+}
+.common-btn{
+    padding: .8rem 2.5rem;
+    background-color: var(--red-color);
+    border: none;
+    border-radius: 3rem;
+    border: 2px solid var(--red-color);
+}
+.common-btn-link{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #E6533C;
+}
+.navbar, 
+.video-box, 
+.run-section, 
+.calculator-section 
+.section{
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content, 
+.habit-section, 
+.habit-card{
+    flex-direction: column;
+}
+.banner-section, 
+.footer-box{
+    justify-content: space-between;
+}
+.common-btn-link, 
+.nav-link, 
+.banner-title,
+.download-btn, 
+.banner-img, 
+.habit-card-title, 
+.bmi-title, 
+.member-name, 
+.member-name, 
+.links-column-title, 
+.section-title, 
+.common-btn-link{
+    color: white;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* header section style */
+
+.header-section{
+    padding-top: 3rem;
+    background-image: linear-gradient(to bottom, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0) );
+}
+
+/* navbar style */
+
+.logo{
+    color: var(--red-color);
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+}
+.nav-menu{
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    padding: .5rem 1.5rem .5rem 2px;
+    border-radius: 3.2rem;
+}
+.nav-items{
+    list-style: none;
+    gap: 3rem;
+}
+.nav-link{
+    text-decoration: none;
+}
+.home-nav{
+    background-color: var(--red-color);
+    padding: .4rem 1.5rem;
+    border-radius: 3.2rem;
+    font-weight: 600;
+}
+
+/* banner title style */
+
+.banner-section{
+    margin-top: 2rem;
+}
+.banner-section > div{
+    max-width: 35rem;
+}
+.banner-content{
+    justify-content: center;
+    padding-bottom: 10rem;
+}
+.banner-title{
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 6rem;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--light-white);
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+.banner-title-style{
+    font-family: miamafont;
+    font-size: 10rem;
+    font-weight: 200;
+    background-color: transparent;
+}
+.banner-btn{
+    gap: 2rem;
+}
+.download-btn{
+    padding: .8rem 2.5rem;
+    border: 2px solid white;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: black;
+}
+
+/* banner img style */
+
+.workout-box{
+    background-color: rgba(48, 48, 48, .54);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    position: relative;
+    top: -60%;
+    left: 60%;
+    width: 37%;
+    text-align: left;
+}
+.video-box{
+    background-color: rgba(48, 48, 48, .54);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    position: relative;
+    top: -35%;
+    left: -35%;
+    width: 50%;
+    text-align: left;
+}
+
+.play-icon{
+    background-color: #E6533C;
+    width: 1.3rem;
+    padding: .8rem;
+    text-align: center;
+    border-radius: 100px;
+}
+.workout-box h5{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.video-box h5{
+    font-size: 1.5rem;
+}
+.banner-img h6{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(239, 237, 232, .65);
+    padding-top: .5rem;
+}
+.workout-box h6{
+    font-size: .81rem;
+}
+
+/* habit section style */
+
+.habit-section{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.habit-card-description{
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+    max-width: 671px;
+}
+.habits{
+    gap: 2.5rem;
+}
+.habit-card{
+    align-items: center;
+}
+.habit-card-img{
+    border-radius: 50%;
+    width: 10rem;
+}
+.habit-card-title{
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding-top: 1.9rem;
+    padding-bottom: .8rem;
+}
+.habit-card-description{
+    text-align: center;
+}
+
+/* run section style */
+
+.run-section{
+    background-color: #222222;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    margin-bottom: 6rem;
+}
+.run-section div{
+    width: calc( (100% - 2.5rem)/2.5 );
+}
+.run-section-description{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.run-img img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* plans section style */
+
+.plan-content{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.price-box hr{
+    margin: 0rem 0rem 1.3rem 0rem;
+}
+.plans{
+    justify-content: space-between;
+    margin-bottom: 6rem;
+}
+.price-box{
+    border: 2px solid var(--light-white);
+    border-radius: 15px;
+    padding: 1rem;
+    width: 28%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.price-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 1rem;
+}
+.price-box-ul li{
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+    list-style: none;
+}
+.extra-plan{
+    font-size: .7rem;
+    margin-right: 1rem;
+    color: red;
+    font-weight: bold;
+    background-color: white;
+    padding: .2rem .5rem;
+}
+.plan-price{
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+.plan-btn{
+    margin-top: 1rem;
+    background-color: transparent;
+    padding:  .5rem 1rem;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.plan-btn-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.golden-price-box{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* Bmi section style */
+
+.bmi-content{
+    max-width: 670px;
+    margin: auto;
+    padding-bottom: 5.5rem;
+}
+.calculator-section{
+    background-color: #222222;
+    padding: 3.2rem 0rem 3.2rem;
+}
+.bmi-title{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.bmi-input{
+    max-width: 577px;
+}
+.bmi-chart-title{
+    margin-bottom: 3.35rem;
+}
+.table{
+    border-collapse: collapse;
+}
+th, td {
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, .1);
+    text-align: left;
+}
+th{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+.flex-gap{
+    gap: .75rem;
+}
+.hald-width input{
+    width: 50%;
+}
+.width-plus{
+    width: 57%;
+    color: var(--light-white);
+}
+.width-full{
+    width: 100%;
+    color: var(--light-white);
+}
+.input-box input, select{
+    background-color: rgba(255, 255, 255, .1);
+    border: none;
+    border-radius: .5rem;
+    padding: .85rem 1.25rem;
+    margin-bottom: .8rem;
+}
+.bmi-input-description{
+    margin-top: .82rem;
+    margin-bottom: 2rem;
+}
+.calculate-btn{
+    margin-top: 1rem;
+}
+
+/* team-section style */
+
+.team-section{
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+}
+.team-section-title{
+    text-align: center;
+}
+.team-section-description{
+    text-align: center;
+    max-width: 670px;
+    margin: auto;
+    padding-bottom: 3.6rem;
+    padding-top: 1rem;
+}
+.team-members{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    background-color: #222222;
+    border-radius: 1rem;
+    padding: 1.2rem;
+}
+.team-member img{
+    width: 100%;
+    height: 272px;
+    opacity: 70%;
+    border-radius: 1rem;
+}
+.member-name{
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-bottom: .2rem;
+}
+.pos-relative{
+    position: relative;
+}
+.member-content{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+/* footer section style */
+
+.footer-section{
+    background-color: #222222;
+    padding-top: 4.125rem;
+}
+.footer-brands{
+    font-size: 4.4rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #E6533C;
+    margin-bottom: 1.2rem;
+}
+.footer-links{
+    gap: 6.5rem
+}
+.footer-box{
+    width: calc( (100% - 6.5rem)/2 );
+}
+.links-column-title{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 2.5rem;
+}
+.links a{
+    font-size: 1.4rem;
+    color: var(--light-white);
+    text-decoration: none;
+}
+.links{
+    padding-bottom: 1.25rem;
+    list-style: none;
+}
+hr{
+    margin-top: 4.8rem;
+}
+.copyright-text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 2rem 0rem;
+    color: var(--light-white);
+}

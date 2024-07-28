@@ -1,0 +1,128 @@
+@media screen and (max-width: 576px){
+    .banner-section, .habits, .run-section, .calculator-section section, .footer-links, .footer-box{
+        flex-direction: column;
+    }
+    .section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-title{
+        font-size: 2rem;
+    }
+
+    /* header section */
+    .logo{
+        font-size: 2.5rem;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .banner-section{
+        margin-top: 3rem;
+    }
+    .banner-content{
+        padding-bottom: 3rem;
+    }
+    .banner-title{
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+    .banner-description{
+        max-width: 80%;
+    }
+    .banner-title-style{
+        font-size: 5rem;
+    }
+    .mobile-join-btn{
+        display: none;
+    }
+    .banner-btn{
+        gap: 1rem;
+    }
+    .common-btn, .download-btn{
+        padding: .8rem 1.8rem;
+        font-weight: bold;
+    }
+    .common-btn a{
+        font-weight: bold;
+    }
+    .workout-box{
+        top: -35rem;
+        left: 56%;
+        padding: 1rem 1rem;
+    }
+    .workout-box h5{
+        font-size: 2rem;
+    }
+    .video-box{
+        top: -26.5rem;
+        left: 2%;
+    }
+
+    /* habit section */
+    .habit-section{
+        margin-top: -11.5rem;
+        margin-bottom: 1rem;
+    }
+    .habits{
+        gap: 0rem;
+    }
+
+    /* run section  */
+    .run-section{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    .run-section div{
+        width: 100%;
+    }
+    .common-btn-run-section{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .run-section-description-br{
+        display: none;
+    }
+
+    /* plans section */
+    .plans{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .price-box{
+        width: 90%;
+    }
+    /* bmi section */
+    .bmi-content{
+        padding: 1.5rem;
+    }
+    .calculator-section section{
+        gap: 3rem;
+    }
+    .bmi-title{
+        font-size: 1.2rem;
+    }
+    .calculate-btn{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    /* team members */
+    .team-members{
+        grid-template-columns: 1fr;
+    }
+
+    /* footer  */
+
+    .footer-box{
+        width: 100%;
+    }
+    .links-column1{
+        margin-top: -4rem;
+    }
+    .links-column2{
+        margin-top: 1.5rem;
+    }
+}
